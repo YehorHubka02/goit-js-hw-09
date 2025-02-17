@@ -1,0 +1,2 @@
+const t=document.querySelector(".feedback-form"),l="feedback-form-state",e=JSON.parse(localStorage.getItem(l))||{email:"",message:""};t.elements.email.value=e.email;t.elements.message.value=e.message;t.addEventListener("input",a=>{e[a.target.name]=a.target.value.trim(),localStorage.setItem(l,JSON.stringify(e))});t.addEventListener("submit",a=>{if(a.preventDefault(),!e.email||!e.message){alert("Fill please all fields");return}console.log(e),localStorage.removeItem(l),t.reset()});
+//# sourceMappingURL=2-form-D1CbswgQ.js.map
